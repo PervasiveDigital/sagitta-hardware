@@ -1,0 +1,22 @@
+{
+  "name": "sagitta-hardware",
+  "version": "1.0.0",
+  "description": "Dictionary of hardware supported by the Sagitta Designer",
+  "main": "out/src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PervasiveDigital/sagitta-hardware.git"
+  },
+  "keywords": [
+    "sagitta"
+  ],
+  "author": "Martin Calsyn <mcalsyn@pervasive.digital> (https://pervasive.digital/)",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/PervasiveDigital/sagitta-hardware/issues"
+  },
+  "homepage": "https://github.com/PervasiveDigital/sagitta-hardware#readme"
+}

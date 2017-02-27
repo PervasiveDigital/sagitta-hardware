@@ -1,0 +1,155 @@
+{
+  "mainboardDefinition": {
+    "name": "Oxygen",
+    "hardware": {
+      "version": "1.0",
+      "cpus": [
+        {
+          "speed": "96MHz",
+          "width": 32,
+          "architecture": "arm",
+          "family": "Cortex",
+          "subfamily": "M4",
+          "model": "STM32F411CEU6"
+        }
+      ],
+      "buses": [
+        {
+          "busType": "i2c",
+          "channels": [
+            {
+              "name": "I2C",
+              "uses": [ "PB8", "PB9" ]
+            }
+          ]
+        },
+        {
+          "busType": "spi",
+          "channels": [
+            {
+              "name": "SPI1",
+              "uses": [ "PA5", "PA6", "PA7" ]
+            },
+            {
+              "name": "SPI2",
+              "uses": [ "PB15", "PB14", "PB13" ]
+            }
+          ]
+        },
+        {
+          "busType": "analog",
+          "channels": [
+            {
+              "name": "PA0",
+              "uses": [ "PA0" ]
+            },
+            {
+              "name": "PA1",
+              "uses": [ "PA1" ]
+            },
+            {
+              "name": "PA2",
+              "uses": [ "PA2" ]
+            },
+            {
+              "name": "PA3",
+              "uses": [ "PA3" ]
+            },
+            {
+              "name": "PA4",
+              "uses": [ "PA4" ]
+            },
+            {
+              "name": "PB0",
+              "uses": [ "PB0" ]
+            },
+            {
+              "name": "PB1",
+              "uses": [ "PB1" ]
+            },
+            {
+              "name": "PC0",
+              "uses": [ "PC0" ]
+            },
+            {
+              "name": "PC1",
+              "uses": [ "PC1" ]
+            },
+            {
+              "name": "PC2",
+              "uses": [ "PC2" ]
+            },
+            {
+              "name": "PC3",
+              "uses": [ "PC3" ]
+            }
+          ]
+        },
+        {
+          "busType": "gpio3v3",
+          "channels": [
+            { "name": "" }
+          ]
+        },
+        {
+          "busType": "pwm",
+          "channels": [
+            {
+              "name": "PB0",
+              "uses": [ "PB0" ]
+            },
+            {
+              "name": "PB1",
+              "uses": [ "PB1" ]
+            },
+            {
+              "name": "PB4",
+              "uses": [ "PB4" ]
+            }
+
+          ]
+        },
+        {
+          "busType": "uart",
+          "channels": [
+            {
+              "name": "UART1",
+              "features": [ "TX", "RX" ],
+              "uses": [ "PA9", "PA10" ]
+            },
+            {
+              "name": "UART2",
+              "features": [ "TX", "RX", "CTS", "RTS" ],
+              "uses": [ "PA0", "PA1", "PA2", "PA3" ]
+            }
+          ]
+        }
+      ]
+    },
+    "software": {
+      "packageName": "Oxygen.package-0.0.1.0.zip",
+      "environment": {
+        "os": {
+          "name": "netmf",
+          "version": ""
+        },
+        "stack": {
+          "name": "netmf",
+          "version": "(4.3,4.4] TODO:verify format for semantic versions"
+        },
+        "toolchain": "vs2015"
+      },
+      "implements": [ "IMainBoard" ],
+      "requires": [ ],
+      "solution": {
+        "buildCmd": ""
+      },
+      "requiresNuget": [
+        {
+          "id": "Verdant.Node.Core",
+          "version": "0.0.1-beta"
+        }
+      ]
+    }
+  }
+}
