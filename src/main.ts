@@ -1,1 +1,1 @@
-export * from './sagitta-parts-dictionary'
+export * from "./sagitta-parts-dictionary"
